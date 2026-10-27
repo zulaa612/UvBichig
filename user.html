@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Нэвтрэх — Student Assist</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-page="login">
+    <header>
+        <div class="bar"><a class="logo" href="index.html">Оюутаны Туслах/Student Assist</a>
+            <nav><a href="index.html">Нүүр</a><a href="feed.html">Мэдээлэл</a><a href="communities.html">Нийгэмлэг</a><a
+                    href="people.html">Оюутнууд</a><a href="profile.html">Профайл</a></nav>
+            <div id="user"></div>
+        </div>
+    </header>
+    <main>
+        <div class="cols">
+            <section>
+                <h1>Нэвтрэх</h1>
+                <form id="log"><label for="email">Имэйл<input id="email" type="email" required
+                            autocomplete="username"></label><label for="pass">Нууц үг<input id="pass" type="password"
+                            required autocomplete="current-password"></label><button>Нэвтрэх</button></form>
+            </section>
+            <section>
+                <h1>Бүртгүүлэх</h1>
+                <form id="reg"><label for="name">Нэр<input id="name" required maxlength="50"></label><label
+                        for="remail">Имэйл<input id="remail" type="email" required></label><label for="rpass">Нууц үг оруулах (6-аас дээш тэмдэгт)</label>
+                            <input id="rpass" type="password" required minlength="6"
+                            autocomplete="new-password"></label><label for="uni">Их сургууль<select id="uni"
+                            required></select></label><label for="major">Мэргэжил<input id="major" required
+                            maxlength="60"></label><label for="year">Курс<select id="year">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select></label><button>Бүртгүүлэх</button></form>
+            </section>
+        </div>
+        <div id="st" class="status" role="status"></div>
+    </main>
+    <footer>F.ITM202 Веб хөгжүүлэлт.
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
