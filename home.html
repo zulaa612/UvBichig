@@ -2,77 +2,98 @@
 <html lang="mn">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale-1.0" />
-    <meta name="description" content="Өв Бичиг - Хос бичигтэн больё." />
-    <title>Нүүр - Өв Бичиг</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Serif:wght@600;700&family=Noto+Sans+Mongolian&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Өв бичиг</title>
     <link rel="stylesheet" href="./css/style.css" />
+
+    <script src="./js/header.js" defer></script>
   </head>
+
   <body>
-    <!--Header Section-->
-    <header>
-      <div class="header">
-        <a class="logo" href="./home.html">
-          <span class="uvbichig" aria-hidden="true">&#x1825;&#x182A;</span>
-          Өв Бичиг
-        </a>
-        <nav class="nav" aria-label="Үндсэн цэс">
-          <a href="./home.html" aria-current="page">Нүүр</a>
-          <a href="./exercise.html">Хичээл</a>
-          <a href="./exercise.html">Дасгал</a>
-          <a href="./about.html">Ахиц</a>
-          <a href="./user.html">Нэвтрэх</a>
-        </nav>
-      </div>
-    </header>
-
-    <!--Hero Section-->
-    <div class="hero">
-      <div class="hero-content">
-        <span class="bichigten">ХОС БИЧИГТЭН</span>
-
-        <h1>
-          Өв соёлоо
-          <span>бичгээрээ</span>
-          өвлүүлье.
-        </h1>
-
-        <p class="hero-description">
-          Монгол үндэсний бичгээ анхан шатнаас нь эхлэн сурч, үсэг холбож, үг
-          уншиж, өөрөө бичиж сураарай. Өдөр бүр бага багаар сурцгаая.
-        </p>
-
-        <div class="hero-action">
-          <a class="action-button" href="./exercise.html"> Эхлэх </a>
-          <a class="second-button" href="./about.html">
-            Хичээлүүдтэй танилцах</a
-          >
-        </div>
-
-        <div class="hero-notepad">
-          <span>Анхан шатнаас ахисан шат хүртэл.</span>
-        </div>
-      </div>
-
-      <div class="hero-vs">
-        <div class="script-card">
-          <span class="script-label">МОНГОЛ ҮНДЭСНИЙ БИЧИГ</span>
-
-          <div class="traditional" lang="mn-Mong">
-            &#x182E;&#x1823;&#x1828;&#x182D;&#x182D;&#x1823;&#x182F;
+    <div class="home">
+      <!--Header Section-->
+      <div class="header-container">
+        <header class="nav">
+          <div class="logo">
+            <span class="logo-symbol">&#x1825;&#x182A;</span>
+            <a href="./home.html" class="logo-text">Өв бичиг</a>
           </div>
 
-          <div class="script-divider"></div>
+          <nav class="nav-links">
+            <a href="./home.html" class="nav-item"
+              >Нүүр <i class="header-icon" data-lucide="house"></i
+            ></a>
+            <a href="./about.html" class="nav-item"
+              >Хичээл <i class="header-icon" data-lucide="book-open-text"></i
+            ></a>
+            <a href="./exercise.html" class="nav-item"
+              >Дасгал <i class="header-icon" data-lucide="notebook-pen"></i
+            ></a>
+            <a href="./progress.html" class="nav-item"
+              >Ахиц <i class="header-icon" data-lucide="trending-up"></i
+            ></a>
+            <a href="./user.html" class="login"
+              >Нэвтрэх <i class="header-icon" data-lucide="circle-user"></i
+            ></a>
+          </nav>
+        </header>
 
-          <p class="script-translation">Монгол</p>
-          <p class="script-caption">Өв соёл · Эх хэл · Ирээдүй</p>
+        <!--Hero Section-->
+        <div class="hero-container">
+          <div class="hero">
+            <h1 class="hero-title">Монгол бичиг суралцахуй.</h1>
+            <p class="hero-text">
+              Монгол үндэсний бичгээ анхан шатнаас нь эхлэн сурч, үсэг холбож,
+              үг уншиж, өөрөө бичиж сураарай. Өдөр бүр бага багаар сурцгаая.
+            </p>
+
+            <div class="hero-buttons">
+              <a class="btn button-primary" href="./lesson.html">Эхлэх</a>
+              <a class="btn button-secondary" href="./exercise.html"
+                >Дасгал хийх</a
+              >
+            </div>
+
+            <ul class="hero-stats">
+              <li>
+                <strong>35<span>үсэг</span></strong>
+              </li>
+              <li>
+                <strong>20+<span>хичээл</span></strong>
+              </li>
+              <li>
+                <strong>100+<span>дасгал</span></strong>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="card">
+              <span class="hero-script"
+                >&#x1825;&#x182A; &#x182A;&#x1822;&#x1834;&#x1822;&#x182D;</span
+              >
+              <span class="card-caption">Монгол бичиг</span>
+
+              <span class="chip chip-top">
+                <i class="header-icon" data-lucide="sparkles"></i> Өдөр бүр
+              </span>
+              <span class="chip chip-bottom">
+                <i class="header-icon" data-lucide="pen-tool"></i> Бич, сур
+              </span>
+            </div>
+          </div>
         </div>
       </div>
+
+      <!--About Section-->
+      <div class="about">
+        
+      </div>
+
+      <script src="https://unpkg.com/lucide@latest"></script>
+      <script>
+        lucide.createIcons();
+      </script>
     </div>
   </body>
 </html>

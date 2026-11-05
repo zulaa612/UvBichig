@@ -1,79 +1,142 @@
 <!doctype html>
 <html lang="mn">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Ахиц — Өв Бичиг</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Serif:wght@600;700&family=Noto+Sans+Mongolian&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Өв бичиг | Ахиц</title>
+
+    <link rel="stylesheet" href="./css/progress.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <script src="./js/header.js" defer></script>
   </head>
+
   <body>
-    <header>
-      <div class="wrap">
-        <a class="logo" href="index.html"
-          ><span class="mn" aria-hidden="true">&#x1825;&#x182A;</span>Өв
-          Бичиг</a
-        >
-        <nav>
-          <a href="index.html">Нүүр</a><a href="lessons.html">Хичээл</a
-          ><a href="practice.html">Дадлага</a
-          ><a href="progress.html" aria-current="page">Ахиц</a
-          ><a href="about.html">Төслийн тухай</a>
-        </nav>
-      </div>
-    </header>
-    <div class="pagehead">
-      <div class="wrap">
-        <h1>Миний ахиц</h1>
-        <p>Сурсан зүйл, дараагийн алхмаа нэг дор хар.</p>
+    <div class="home">
+      <div class="header-container">
+        <header class="nav">
+          <div class="logo">
+            <span class="logo-symbol">&#x1825;&#x182A;</span>
+            <a href="./home.html" class="logo-text">Өв бичиг</a>
+          </div>
+
+          <nav class="nav-links">
+            <a href="./home.html" class="nav-item"
+              >Нүүр <i class="header-icon" data-lucide="house"></i
+            ></a>
+            <a href="./about.html" class="nav-item"
+              >Хичээл <i class="header-icon" data-lucide="book-open-text"></i
+            ></a>
+            <a href="./exercise.html" class="nav-item"
+              >Дасгал <i class="header-icon" data-lucide="notebook-pen"></i
+            ></a>
+            <a href="./progress.html" class="nav-item"
+              >Ахиц <i class="header-icon" data-lucide="trending-up"></i
+            ></a>
+            <a href="./user.html" class="login"
+              >Нэвтрэх <i class="header-icon" data-lucide="circle-user"></i
+            ></a>
+          </nav>
+        </header>
+
+        <main class="container">
+          <section class="intro">
+            <span class="section-label">СУРАЛЦАХУЙН ЗАМНАЛ</span>
+            <h1>Миний ахиц</h1>
+            <p>Өв соёлоо өвлөн суралцаж, эрдмийн зэрэгт хүрэх аялал</p>
+          </section>
+
+          <section class="current-rank">
+            <div class="rank-badge">
+              <span>ОДООГИЙН ЗЭРЭГ</span>
+            </div>
+
+            <div class="current-rank-image">
+              <img
+                src="./picture/honor_picture/rank_1.png"
+                alt="Нэгдүгээр зэрэг"
+              />
+            </div>
+
+            <h2>I зэрэг</h2>
+
+            <p class="rank-description">Эрдмийн замналын эхлэл</p>
+
+            <div class="xp-info">
+              <span>Цуглуулсан XP</span>
+              <span>0 / 100 XP</span>
+            </div>
+
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+
+            <p class="next-rank">Дараагийн зэрэг: II зэрэг</p>
+          </section>
+
+          <section class="ranking-section">
+            <div class="ranking-heading">
+              <h2>Эрдмийн зэрэглэл</h2>
+              <p>Мэдлэгийн долоон шат</p>
+            </div>
+
+            <div class="rank-grid">
+              <article class="rank-card unlocked">
+                <img src="./picture/honor_picture/rank_1.png" alt="I зэрэг" />
+                <h3>I зэрэг</h3>
+                <p>0 XP</p>
+                <span class="rank-status">Нээгдсэн</span>
+              </article>
+
+              <article class="rank-card locked">
+                <img src="./picture/honor_picture/rank_2.png" alt="II зэрэг" />
+                <h3>II зэрэг</h3>
+                <p>100 XP</p>
+                <span class="rank-status">Түгжээтэй</span>
+              </article>
+
+              <article class="rank-card locked">
+                <img src="./picture/honor_picture/rank_3.png" alt="III зэрэг" />
+                <h3>III зэрэг</h3>
+                <p>250 XP</p>
+                <span class="rank-status">Түгжээтэй</span>
+              </article>
+
+              <article class="rank-card locked">
+                <img src="./picture/honor_picture/rank_4.png" alt="IV зэрэг" />
+                <h3>IV зэрэг</h3>
+                <p>450 XP</p>
+                <span class="rank-status">Түгжээтэй</span>
+              </article>
+
+              <article class="rank-card locked">
+                <img src="./picture/honor_picture/rank_5.png" alt="V зэрэг" />
+                <h3>V зэрэг</h3>
+                <p>700 XP</p>
+                <span class="rank-status">Түгжээтэй</span>
+              </article>
+
+              <article class="rank-card locked">
+                <img src="./picture/honor_picture/rank_6.png" alt="VI зэрэг" />
+                <h3>VI зэрэг</h3>
+                <p>1000 XP</p>
+                <span class="rank-status">Түгжээтэй</span>
+              </article>
+
+              <article class="rank-card locked">
+                <img src="./picture/honor_picture/rank_7.png" alt="VII зэрэг" />
+                <h3>VII зэрэг</h3>
+                <p>1500 XP</p>
+                <span class="rank-status">Түгжээтэй</span>
+              </article>
+            </div>
+          </section>
+        </main>
       </div>
     </div>
-    <section>
-      <div class="wrap">
-        <div class="stats">
-          <div class="card stat"><b>12</b>Өдрийн цуврал</div>
-          <div class="card stat"><b>2 / 10</b>Дууссан хичээл</div>
-          <div class="card stat"><b>86%</b>Сорилын дундаж</div>
-          <div class="card stat"><b>7</b>Сурсан үсэг</div>
-        </div>
-      </div>
-    </section>
-    <section class="band">
-      <div class="wrap">
-        <h2>Шат тус бүрийн явц</h2>
-        <div class="card">
-          <div class="bar">
-            <div><span>Эгшиг</span><span>70%</span></div>
-            <span><i style="width: 70%"></i></span>
-          </div>
-          <div class="bar">
-            <div><span>Гийгүүлэгч</span><span>0%</span></div>
-            <span><i style="width: 0%"></i></span>
-          </div>
-          <div class="bar">
-            <div><span>Холболт</span><span>0%</span></div>
-            <span><i style="width: 0%"></i></span>
-          </div>
-          <div class="bar">
-            <div><span>Зөв бичих</span><span>0%</span></div>
-            <span><i style="width: 0%"></i></span>
-          </div>
-        </div>
-        <p style="margin-top: 20px">
-          <a class="btn" href="lessons.html">Хичээлээ үргэлжлүүлэх</a>
-        </p>
-      </div>
-    </section>
-    <footer>
-      <div class="wrap">
-        <span>© 2026 Өв Бичиг. Үндэсний бичгээ хойч үедээ.</span
-        ><span>info@ovbichig.mn</span>
-      </div>
-    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
