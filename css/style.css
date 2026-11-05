@@ -346,11 +346,11 @@ body {
   animation-delay: -3s;
 }
 
-.about {
+.footer {
   max-width: 90%;
   margin: 0 auto;
-  min-height: calc(100dvh - 140px);
-  display: grid;
+  min-height: calc(100dvh - 800px);
+  background-color: #ffffff55;
   grid-template-columns: 1.1fr 0.9fr;
   align-items: center;
   gap: 40px;
