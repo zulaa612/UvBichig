@@ -377,7 +377,7 @@ body {
   gap: 8px;
 }
 
-.logo {
+.logo-shutis {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -496,7 +496,7 @@ body {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.law{
+.law {
   margin-top: 75px;
 }
 /* ==================== RESPONSIVE ==================== */

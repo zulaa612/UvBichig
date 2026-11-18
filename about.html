@@ -1,106 +1,233 @@
 <!doctype html>
 <html lang="mn">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Төслийн тухай — Өв Бичиг</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Serif:wght@600;700&family=Noto+Sans+Mongolian&display=swap"
-      rel="stylesheet"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Өв бичиг | Хичээл</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <script src="./js/header.js" defer></script>
+    <link rel="stylesheet" href="./css/lesson.css" />
   </head>
   <body>
-    <header class="site-header" data-site-header>
-      <a class="site-brand" href="./home.html">
-        <span class="site-brand__mark" aria-hidden="true">&#x1825;&#x182A;</span>
-        <span class="site-brand__copy">
-          <span class="site-brand__name">Өв бичиг</span>
-          <span class="site-brand__tagline">Үндэсний бичгийн өв</span>
-        </span>
-      </a>
+    <div class="home page-lesson">
+      <div class="header-container">
+        <header class="nav">
+          <div class="logo">
+            <span class="logo-symbol">&#x1825;&#x182A;</span>
+            <a href="./home.html" class="logo-text">Өв бичиг</a>
+          </div>
+          <nav class="nav-links">
+            <a href="./home.html" class="nav-item"
+              >Нүүр <i class="header-icon" data-lucide="house"></i
+            ></a>
+            <a href="./about.html" class="nav-item"
+              >Хичээл <i class="header-icon" data-lucide="book-open-text"></i
+            ></a>
+            <a href="./exercise.html" class="nav-item"
+              >Дасгал <i class="header-icon" data-lucide="notebook-pen"></i
+            ></a>
+            <a href="./progress.html" class="nav-item"
+              >Ахиц <i class="header-icon" data-lucide="trending-up"></i
+            ></a>
+            <a href="./user.html" class="login"
+              >Нэвтрэх <i class="header-icon" data-lucide="circle-user"></i
+            ></a>
+          </nav>
+        </header>
 
-      <button class="site-menu-toggle" type="button" aria-controls="site-navigation"
-        aria-expanded="false" aria-label="Цэс нээх" hidden>
-        <span>Цэс</span>
-        <svg class="site-menu-open" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-        <svg class="site-menu-close" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 6 12 12M6 18 18 6"/></svg>
-      </button>
+        <main class="container">
+          <section class="intro">
+            <span class="section-label">МОНГОЛ БИЧГИЙН ХИЧЭЭЛ</span>
+            <h1>Хичээл</h1>
+            <p>
+              Цагаан толгойноос эхлээд үг, өгүүлбэр хүртэл — шат дараалан суралц
+            </p>
+          </section>
 
-      <nav class="site-navigation" id="site-navigation" aria-label="Үндсэн цэс">
-        <div class="site-navigation__links">
-          <a class="site-nav-link" href="./home.html">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z"/></svg>
-            <span>Нүүр</span>
-          </a>
-          <a class="site-nav-link" href="./exercise.html">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4h11a2 2 0 0 1 2 2v3M4 4v16h10M4 4H3m1 5H3m1 5H3m1 5H3"/><path d="m14 17 6-6 2 2-6 6-3 1Z"/></svg>
-            <span>Дасгал</span>
-          </a>
-          <a class="site-nav-link" href="./progress.html">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 3v18h18M7 14l5-5 4 3 5-7M16 5h5v5"/></svg>
-            <span>Ахиц</span>
-          </a>
-          <a class="site-nav-link" href="./about.html" aria-current="page">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></svg>
-            <span>Төслийн тухай</span>
-          </a>
-        </div>
-        <a class="site-sign-in" href="./user.html">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="4"/><path d="M5 21v-2a7 7 0 0 1 14 0v2"/></svg>
-          <span>Нэвтрэх</span>
-        </a>
-      </nav>
-    </header>
-    <div class="pagehead">
-      <div class="wrap">
-        <h1>Төслийн тухай</h1>
-        <p>Үндэсний бичиг соёлоо хадгалж, хойч үедээ өвлүүлнэ.</p>
+          <div class="lesson-layout">
+            <!-- Хичээлийн жагсаалт -->
+            <aside class="lesson-list">
+              <div class="lesson-list-head">
+                <h2>Хичээлүүд</h2>
+                <span>2 / 12 дууссан</span>
+              </div>
+              <div class="mini-bar"><div class="mini-fill"></div></div>
+
+              <a href="#" class="lesson-item done">
+                <span class="lesson-num"><i data-lucide="check"></i></span>
+                <span class="lesson-info"
+                  ><strong>Монгол бичгийн ерөнхий ойлголт</strong
+                  ><small>5 мин</small></span
+                >
+              </a>
+              <a href="#" class="lesson-item done">
+                <span class="lesson-num"><i data-lucide="check"></i></span>
+                <span class="lesson-info"
+                  ><strong>Бичих чиглэл, шугам</strong
+                  ><small>8 мин</small></span
+                >
+              </a>
+              <a href="#" class="lesson-item active">
+                <span class="lesson-num">3</span>
+                <span class="lesson-info"
+                  ><strong>Эгшиг үсэг: А, Э, И</strong
+                  ><small>12 мин</small></span
+                >
+              </a>
+              <a href="#" class="lesson-item">
+                <span class="lesson-num">4</span>
+                <span class="lesson-info"
+                  ><strong>Эгшиг үсэг: О, У, Ө, Ү</strong
+                  ><small>12 мин</small></span
+                >
+              </a>
+              <a href="#" class="lesson-item">
+                <span class="lesson-num">5</span>
+                <span class="lesson-info"
+                  ><strong>Гийгүүлэгч: Н, Б, П</strong
+                  ><small>15 мин</small></span
+                >
+              </a>
+              <a href="#" class="lesson-item locked">
+                <span class="lesson-num"><i data-lucide="lock"></i></span>
+                <span class="lesson-info"
+                  ><strong>Үсгийн хэлбэр: эхэнд, дунд, төгсгөлд</strong
+                  ><small>15 мин</small></span
+                >
+              </a>
+              <a href="#" class="lesson-item locked">
+                <span class="lesson-num"><i data-lucide="lock"></i></span>
+                <span class="lesson-info"
+                  ><strong>Анхны үгээ бичье</strong><small>18 мин</small></span
+                >
+              </a>
+            </aside>
+
+            <!-- Хичээлийн агуулга -->
+            <article class="lesson-content">
+              <div class="lesson-top">
+                <span class="badge">3-р хичээл</span>
+                <span class="badge badge-soft"
+                  ><i data-lucide="clock"></i>12 мин</span
+                >
+                <span class="badge badge-soft"
+                  ><i data-lucide="star"></i>+20 XP</span
+                >
+              </div>
+              <h2 class="lesson-title">Эгшиг үсэг: А, Э, И</h2>
+              <p class="lesson-lead">
+                Эгшиг үсэг нь үгийн цөм болдог. Энэ хичээлээр гурван үндсэн
+                эгшгийн хэлбэр, бичих дарааллыг сурна.
+              </p>
+
+              <div class="glyph-card">
+                <div class="glyph-main">
+                  <span class="glyph">&#x1820;</span>
+                  <small>А</small>
+                </div>
+                <div class="glyph-forms">
+                  <div class="form-box">
+                    <span class="glyph-sm">&#x1820;</span><em>Эхэнд</em>
+                  </div>
+                  <div class="form-box">
+                    <span class="glyph-sm">&#x1820;</span><em>Дунд</em>
+                  </div>
+                  <div class="form-box">
+                    <span class="glyph-sm">&#x1820;</span><em>Төгсгөлд</em>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tip">
+                <i data-lucide="lightbulb"></i>
+                <p>
+                  <strong>Зөвлөгөө:</strong> Дээрээс доош нэг мөрөөр, зүүнээс
+                  баруун тийш мөр шилжүүлэн бич.
+                </p>
+              </div>
+
+              <h3 class="sub-title">Жишээ үгс</h3>
+              <div class="word-grid">
+                <div class="word-card">
+                  <span class="word-script">&#x1820;&#x1828;&#x1820;</span
+                  ><strong>ана</strong><small>тэмдэг</small>
+                </div>
+                <div class="word-card">
+                  <span class="word-script">&#x1820;&#x182E;&#x1820;</span
+                  ><strong>ама</strong><small>ам</small>
+                </div>
+                <div class="word-card">
+                  <span class="word-script">&#x1822;&#x1828;&#x1820;</span
+                  ><strong>ина</strong><small>жишээ</small>
+                </div>
+              </div>
+
+              <div class="lesson-actions">
+                <a href="#" class="btn button-secondary"
+                  ><i data-lucide="arrow-left"></i>Өмнөх</a
+                >
+                <a href="./exercise.html" class="btn button-primary"
+                  >Дасгал хийх<i data-lucide="arrow-right"></i
+                ></a>
+              </div>
+            </article>
+          </div>
+        </main>
       </div>
     </div>
-    <section>
-      <div class="wrap">
-        <h2>Зорилго</h2>
-        <p>
-          Монгол бичгийг хүн бүрд хүртээмжтэй, ойлгомжтой, сонирхолтой аргаар
-          сургах замаар үндэсний хэл, бичиг соёлыг түгээн дэлгэрүүлнэ.
-        </p>
-      </div>
-    </section>
-    <section class="band">
-      <div class="wrap">
-        <h2>Бидний зарчим</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Шат дараатай</h3>
-            <p>Цагаан толгойноос үг унших, зөв бичих хүртэл.</p>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col footer-about">
+          <div class="footer-logo">
+            <span class="logo-symbol">&#x1825;&#x182A;</span>
+            <span class="logo-text">Өв бичиг</span>
           </div>
-          <div class="card">
-            <h3>Өөрийн хурдаар</h3>
-            <p>Хэрэглэгч бүр өөрт тохирсон хэмнэлээр суралцана.</p>
-          </div>
-          <div class="card">
-            <h3>Хаанаас ч</h3>
-            <p>Компьютер болон гар утсанд тохирсон интерфэйс.</p>
-          </div>
+          <p class="footer-description">
+            Монголын өв соёл болсон үндэсний бичгээ дээдлэн түгээхийн тулд
+            ШУТИС-МХТС 2-р дамжааны оюутнууд зохиомжлов.
+          </p>
+          <p class="law">
+            &copy; 2026 Өв бичиг. Бүх эрх хуулиар хамгаалагдсан.
+          </p>
+        </div>
+        <div class="footer-col footer-links">
+          <h3 class="footer-heading">Шилжих</h3>
+          <ul>
+            <li>
+              <a href="./home.html"><i data-lucide="chevron-right"></i>Нүүр</a>
+            </li>
+            <li>
+              <a href="./about.html"
+                ><i data-lucide="chevron-right"></i>Хичээл</a
+              >
+            </li>
+            <li>
+              <a href="./exercise.html"
+                ><i data-lucide="chevron-right"></i>Дасгал</a
+              >
+            </li>
+            <li>
+              <a href="./progress.html"
+                ><i data-lucide="chevron-right"></i>Ахиц</a
+              >
+            </li>
+            <li>
+              <a href="./user.html"
+                ><i data-lucide="chevron-right"></i>Нэвтрэх</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-col footer-contact">
+          <h3 class="footer-heading">Холбоо барих</h3>
+          <p><i data-lucide="mail"></i>uvbichig@gmail.com</p>
+          <p><i data-lucide="phone"></i>+976 80165740</p>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="wrap">
-        <h2>Холбоо барих</h2>
-        <p>Санал хүсэлтээ info@ovbichig.mn хаягаар илгээнэ үү.</p>
-      </div>
-    </section>
-    <footer>
-      <div class="wrap">
-        <span>© 2026 Өв Бичиг. Үндэсний бичгээ хойч үедээ.</span
-        ><span>info@ovbichig.mn</span>
-      </div>
+      <div class="footer-bottom"></div>
     </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>

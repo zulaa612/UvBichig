@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Бүртгүүлэх — Өв бичиг</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Noto+Serif:wght@600;700&family=Noto+Sans+Mongolian&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/auth.css" />
+    <script src="./js/auth.js" defer></script>
+  </head>
+  <body>
+    <div class="home">
+      <!--Header Section-->
+      <div class="header-container">
+        <header class="nav">
+          <div class="logo">
+            <span class="logo-symbol">&#x1825;&#x182A;</span>
+            <a href="./home.html" class="logo-text">Өв бичиг</a>
+          </div>
+
+          <nav class="nav-links">
+            <a href="./home.html" class="nav-item"
+              >Нүүр <i class="header-icon" data-lucide="house"></i
+            ></a>
+            <a href="./about.html" class="nav-item"
+              >Хичээл <i class="header-icon" data-lucide="book-open-text"></i
+            ></a>
+            <a href="./exercise.html" class="nav-item"
+              >Дасгал <i class="header-icon" data-lucide="notebook-pen"></i
+            ></a>
+            <a href="./progress.html" class="nav-item"
+              >Ахиц <i class="header-icon" data-lucide="trending-up"></i
+            ></a>
+            <a href="./user.html" class="login"
+              >Нэвтрэх <i class="header-icon" data-lucide="circle-user"></i
+            ></a>
+          </nav>
+        </header>
+
+        <!--Auth Section-->
+        <main class="auth-container">
+          <div class="auth-card">
+            <div class="auth-tabs">
+              <a href="./user.html" class="tab-btn">Нэвтрэх</a>
+              <a href="./register.html" class="tab-btn active">Бүртгүүлэх</a>
+            </div>
+
+            <form id="register-form" class="auth-form" novalidate>
+              <span class="section-label">ШИНЭ ЗАМНАЛ</span>
+              <h2>Шинэ бүртгэл үүсгэх</h2>
+              <p class="auth-subtitle">
+                Үндэсний бичгээ сурч эхлэхийн тулд бүртгүүлнэ үү.
+              </p>
+
+              <div class="input-row two-col">
+                <div class="input-group">
+                  <label for="reg-lastname">Овог:</label>
+                  <div class="input-wrapper">
+                    <i data-lucide="user"></i>
+                    <input
+                      type="text"
+                      id="reg-lastname"
+                      placeholder="Овог"
+                      autocomplete="family-name"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="reg-firstname">Нэр:</label>
+                  <div class="input-wrapper">
+                    <i data-lucide="user"></i>
+                    <input
+                      type="text"
+                      id="reg-firstname"
+                      placeholder="Нэр"
+                      autocomplete="given-name"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label for="reg-email">Майл хаяг:</label>
+                <div class="input-wrapper">
+                  <i data-lucide="mail"></i>
+                  <input
+                    type="email"
+                    id="reg-email"
+                    placeholder="name@gmail.com"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label for="reg-password">Нууц үг:</label>
+                <div class="input-wrapper">
+                  <i data-lucide="lock"></i>
+                  <input
+                    type="password"
+                    id="reg-password"
+                    placeholder="Хамгийн багадаа 6 тэмдэгт"
+                    autocomplete="new-password"
+                    required
+                  />
+                  <button
+                    type="button"
+                    class="toggle-pass"
+                    data-target="reg-password"
+                  >
+                    Харах
+                  </button>
+                </div>
+              </div>
+
+              <div class="input-group">
+                <label for="reg-password2">Нууц үг давтах:</label>
+                <div class="input-wrapper">
+                  <i data-lucide="lock-keyhole"></i>
+                  <input
+                    type="password"
+                    id="reg-password2"
+                    placeholder="Нууц үгээ дахин оруулна уу"
+                    autocomplete="new-password"
+                    required
+                  />
+                  <button
+                    type="button"
+                    class="toggle-pass"
+                    data-target="reg-password2"
+                  >
+                    Харах
+                  </button>
+                </div>
+              </div>
+
+              <div class="input-row">
+                <label class="remember-me">
+                  <input type="checkbox" id="reg-agree" />Үйлчилгээний нөхцөлийг
+                  зөвшөөрч байна
+                </label>
+              </div>
+
+              <p class="form-message" id="register-message" role="alert"></p>
+
+              <button type="submit" class="submit-btn">Бүртгүүлэх</button>
+
+              <p class="switch-text">
+                Бүртгэлтэй юу? <a href="./user.html">Нэвтрэх</a>
+              </p>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col footer-about">
+          <div class="footer-logo">
+            <span class="logo-symbol">&#x1825;&#x182A;</span>
+            <span class="logo-text">Өв бичиг</span>
+          </div>
+          <p class="footer-description">
+            Монголын өв соёл болсон үндэсний бичгээ дээдлэн түгээхийн тулд
+            ШУТИС-МХТС 2-р дамжааны оюутнууд зохиомжлов.
+          </p>
+          <p class="law">
+            &copy; 2026 Өв бичиг. Бүх эрх хуулиар хамгаалагдсан.
+          </p>
+        </div>
+
+        <div class="footer-col footer-links">
+          <h3 class="footer-heading">Шилжих</h3>
+          <ul>
+            <li>
+              <a href="./home.html"><i data-lucide="chevron-right"></i>Нүүр</a>
+            </li>
+            <li>
+              <a href="./about.html"
+                ><i data-lucide="chevron-right"></i>Хичээл</a
+              >
+            </li>
+            <li>
+              <a href="./exercise.html"
+                ><i data-lucide="chevron-right"></i>Дасгал</a
+              >
+            </li>
+            <li>
+              <a href="./progress.html"
+                ><i data-lucide="chevron-right"></i>Ахиц</a
+              >
+            </li>
+            <li>
+              <a href="./user.html"
+                ><i data-lucide="chevron-right"></i>Нэвтрэх</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3 class="footer-heading">Холбоо барих</h3>
+          <p><i data-lucide="mail"></i>uvbichig@gmail.com</p>
+          <p><i data-lucide="phone"></i>+976 80165740</p>
+
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i data-lucide="instagram"></i
+            ></a>
+            <a href="#" aria-label="Youtube"><i data-lucide="youtube"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom"></div>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
